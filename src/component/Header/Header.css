@@ -1,0 +1,129 @@
+.navbar{
+    background-color: rgb(0, 0, 102);
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 3rem;
+
+}
+
+
+
+.navbar h3{
+    font-weight: 500;
+}
+.navbar ul {
+    list-style: none;
+    display:flex;
+    gap: 2.3rem;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.navbar button{
+    height: 40px;
+    width: 120px;
+    border-radius:1.15rem ;
+    font-size: 1rem;
+    background:rgb(88, 169, 235);
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.navbar button:hover{
+    border: 1px solid rgb(11, 11, 234);
+    background: linear-gradient(navy 0%,rgb(22, 22, 173) 100%);
+    color: coral;
+    box-shadow: 0px 0px 5px rgba(255, 127, 80, 0.521);
+}
+
+.navbar ul li {
+    position: relative; /* Add this to position the ::before pseudo-element */
+    overflow:hidden;
+    transition: all .3s linear;
+    
+}
+
+.navbar ul li::before{
+    content: " ";
+    position: absolute;
+    height:3px;
+    width: 100%;
+    background-color:coral;
+    bottom: 0;
+    left: -100%;
+    transition: all .3s linear;
+}
+
+.navbar ul li:hover::before{
+    left: 0;
+    
+}
+
+.navbar ul li a:hover{
+    color: coral;
+}
+
+.menu{
+    display: none;
+    font-size: 1.8rem;
+}
+
+@media (max-width:900px){
+    .navbar ul li a{
+        font-size: .8rem;
+    }
+    .navbar button{
+        height: 30px;
+        width: 80px;
+    }
+}
+
+@media (max-width:769px){
+    .navbar {
+        justify-content: space-between;
+        padding-left: 10%;
+        padding-right: 10%;
+        
+    }
+    .navbar ul{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+
+    .logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .navbar button{
+        height: 40px;
+        width: 120px;
+    }
+}
+
+@media (max-width:360px){
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        gap:20px;
+    }
+
+    .logo-container{
+        flex-direction: column-reverse;
+    }
+}
+

@@ -1,0 +1,7 @@
+@media(max-width:550px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+}

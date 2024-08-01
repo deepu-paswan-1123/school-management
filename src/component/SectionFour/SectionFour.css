@@ -1,0 +1,105 @@
+.sectionfour-container{
+    display: flex;
+    justify-content: center;
+}
+.sectionfour{
+    display: flex;
+    
+    gap: 16rem;
+}
+.sectionfour-left{
+    /* background-color:red; */
+    /* padding: 3rem; */
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+   
+    
+    
+}
+
+@media(max-width:1159px){
+    .sectionfour{
+        gap: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+.sectionfour-left p{
+    font-size: 0.7rem;
+    color: #667085;
+    /* color: white; */
+    /* background-color: green; */
+    width: 400px;
+}
+
+.sectionfour-right{
+    /* background-color: red; */
+    height: 400px;
+    width: 50%;
+}
+
+.sectionfour-logo{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    /* background-color: red; */
+    gap: 1rem;
+}
+
+.profile-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.profile-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+
+.profile-content p{
+    padding: 0;
+    font-size: 0.5rem;
+    color: #BDBDBD;
+    width: auto;
+}
+
+.sectionfour-right{
+    padding-top: 2rem;
+}
+
+.sectionfour-right-img{
+    height: 300px;
+    width: 400px;
+
+}
+
+.sectionfour-right-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media(max-width:768px){
+    .sectionfour{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .sectionfour-left p{
+        padding: 0;
+    }
+}
+
+@media(max-width:730px){
+    .sectionfour-left h3{
+        font-size: 0.9rem;
+    }
+}

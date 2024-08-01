@@ -1,0 +1,152 @@
+.footer{
+    background-color: #100F57;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 7rem;
+    color: #FFFFFF;
+    background-color: #100F57;
+
+}
+
+.footer-top-left{
+    display: flex;
+    gap: 2rem;
+    color: #FFFFFF;
+    /* background-color: red; */
+}
+
+.footer-top-left ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-top-left ul h5{
+    margin-bottom: 1rem;
+}
+
+.footer-top-left li{
+    font-size: 0.6rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.btn-contain{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.4rem;
+    width: 250px;
+    border-radius: 0.4rem;
+
+}
+
+.btn-contain p{
+    font-size: 0.5rem;
+    color: #667085;
+}
+
+.btn-contain button{
+    border: none;
+    outline: none;
+    background-color: #0A92DD;
+    border-radius: 1.2rem;
+    padding: 0.8rem;
+    color: white;
+    width: 100px;
+
+}
+
+.footer-top-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-top-right ul  li{
+    font-size: 0.6rem;
+}
+
+.footer-top-right ul{
+    display: flex;
+    flex-direction: column;
+
+}
+.footer-top-right ul h5{
+    margin-bottom: 2rem;
+}
+
+.footer-top ul li{
+    transition: all .3s linear;
+    cursor:pointer;
+
+}
+.footer-top ul li:hover{
+    transform: translateX(0.8rem);
+    color:coral;
+}
+
+
+.footer-bottom{
+    color: white;
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7rem;
+    padding-bottom: 2rem;
+}
+.footer-bottom ul {
+    display: flex;
+    gap: 1rem;
+    margin-right: 6.5rem;   
+}
+
+
+.footer-bottom ul li{
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.footer-bottom ul li:hover{
+    color: coral;
+    transform: translateX(0.5rem);
+}
+@media(max-width:950px){
+    .footer-top{
+        padding: 3rem 5rem;
+    }
+}
+@media(max-width:874px){
+    .footer-top{
+       
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+}
+
+@media(max-width:613px){
+    .footer-top{
+        padding: 3rem 3rem;
+    }
+    .footer-top-left h5{
+        font-size: 0.7rem;
+    }
+}
+
+@media(max-width:770px){
+    .footer-bottom{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .footer-bottom ul{
+        margin-right: 0;
+    }
+}
+

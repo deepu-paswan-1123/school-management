@@ -1,0 +1,32 @@
+.sectiontwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.sectiontwo-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 1rem;
+    /* background-color: red; */
+}
+
+@media(max-width:529px){
+    .logo-image{
+        width: 30px;
+        height: 30px;
+        /* background-color:green; */
+    }
+
+    .logo-image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

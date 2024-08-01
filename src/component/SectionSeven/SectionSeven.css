@@ -1,0 +1,49 @@
+.sectionseven{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6rem;
+}
+
+.sectionseven-image{
+    height: 300px;
+    /* background-color: red; */
+}
+
+.sectionseven-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.sectionseven-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.sectionseven-content h2{
+    width: 250px;
+}
+
+.sectionseven-content p{
+    width: 300px;
+    color:#667085;
+    font-size: 0.7rem;
+}
+
+.sectionseven-content button{
+    border: none;
+    outline: none;
+    background-color: #1777F7;
+    color: white;
+    padding: 0.5rem;
+    width: 100px;
+    border-radius: 0.5rem;
+}
+
+@media(max-width:848px){
+    .sectionseven{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+}
